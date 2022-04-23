@@ -1,0 +1,1 @@
+{"name":"Local: bubbleSort","url":"d:\\GitHub\\Coding-Ninjas\\Array\\bubbleSort.cpp","tests":[{"id":1650560318011,"input":"6\n 10 1 7 6 14 9","output":"1 6 7 9 10 14"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\GitHub\\Coding-Ninjas\\Array\\bubbleSort.cpp","group":"local","local":true}
