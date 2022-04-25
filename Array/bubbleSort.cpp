@@ -17,7 +17,7 @@ using namespace std;
                     temp=1;
               }
          }
-          if( temp==0){
+          if( temp==0){// cheacking  if  array is sorted
                break;
           }
     }  
