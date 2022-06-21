@@ -1,2 +1,0 @@
-
-    Node *mid = middle(head);
