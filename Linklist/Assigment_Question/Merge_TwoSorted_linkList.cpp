@@ -57,6 +57,7 @@ Node *merge(Node *head1, Node *head2)
     }
     if (head1 != NULL)
     {
+         
         f_tail->next = head1;
     }
     if (head2 != NULL)

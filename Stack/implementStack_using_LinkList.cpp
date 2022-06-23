@@ -70,11 +70,21 @@ public:
 
     int top1()
     {
-        if (top!= NULL)
+        if (top != NULL)
         {
             return top->data;
         }
         return 0;
+    }
+    void print()
+    {
+        Node *tempPointer = top;
+        while (tempPointer != NULL)
+        {
+            cout << tempPointer->data << "->";
+            tempPointer = tempPointer->next;
+        }
+        cout <<endl;
     }
 };
 
@@ -83,24 +93,21 @@ int main()
     // code hear
     Stack_class s;
 
-    s.push(10);
-    s.push(20);
-    s.push(30);
-    s.push(30);
-    s.push(10);
-    s.push(20);
+    s.push(11);
+    s.push(22);
+    s.push(33);
+    s.push(44);
 
-    cout << "data is Removed " << s.pop() << endl;
-    cout << "data is Removed " << s.pop() << endl;
-    cout << "data is Removed " << s.pop() << endl;
-    s.push(10);
-    s.push(20);
+    cout << "Now the List is: "; s.print();
+    cout << " Removed data is " << s.pop() << endl;
+    cout << "Removed data is " << s.pop() << endl;
+    cout << "Remaing list is :"; s.print() ;
 
     cout << "Your Stack size is " << s.size() << endl;
 
-    cout << "Is stack empty: " << s.empty()<<endl;
+    cout << "Is stack empty: " << s.empty() << endl;
 
-     cout<<"top Element of stack "<<s.top1()<<endl;
+    cout << "top Element of stack " << s.top1() << endl;
 
     return 0;
 }
