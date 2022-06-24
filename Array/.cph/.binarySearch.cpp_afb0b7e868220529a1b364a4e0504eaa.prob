@@ -1,1 +1,0 @@
-{"name":"Local: binarySearch","url":"d:\\GitHub\\Coding-Ninjas\\Array\\binarySearch.cpp","tests":[{"id":1650472089989,"input":"7\n 12 54  65 95 102  111 150\n  95","output":"3"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\GitHub\\Coding-Ninjas\\Array\\binarySearch.cpp","group":"local","local":true}

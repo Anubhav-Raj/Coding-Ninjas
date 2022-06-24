@@ -1,1 +1,0 @@
-{"name":"Local: RotateArray","url":"d:\\GitHub\\Coding-Ninjas\\Array\\RotateArray.cpp","tests":[{"id":1650996644044,"input":"7\n1 2 3 4 5 6 7\n3","output":""},{"id":1650997613674,"input":"4\n-1 -100 3 99\n2","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\GitHub\\Coding-Ninjas\\Array\\RotateArray.cpp","group":"local","local":true}
