@@ -15,7 +15,7 @@ Node *middle(Node *head)
 {
   Node *slow = head;
   Node *fast = head;
-  while (fast != NULL && fast->next != NULL)
+  while (fast->next != NULL || fast->next != NULL)
   {
     slow = slow->next;
     fast = fast->next->next;
@@ -55,6 +55,8 @@ bool Cheak_Palidrom(Node *head)
   }
   return true;
 }
+ 
+
 int main()
 {
   // code hear
@@ -69,7 +71,7 @@ int main()
   n2->next = n3;
   n3->next = n4;
   n4->next = n5;  Node * mid= middle(head);
-      cout<< mid->data<<endl;
+ cout<< mid->data<<endl;
 
   if (Cheak_Palidrom(head))
   {

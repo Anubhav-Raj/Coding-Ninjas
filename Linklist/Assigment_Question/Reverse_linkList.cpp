@@ -89,7 +89,7 @@ int main()
 
     print(head);
     head = reverse2(head);
-    
+     
     print(head);
 
     return 0;

@@ -1,0 +1,31 @@
+class Solution {
+public:
+    bool isAnagram(string s, string t) {
+        
+        // Store all letters frequency in array  
+         int alphabet[26]={0},i=0,j=0;
+         while(s[i]!='\0'){
+              if(s[i]>='a' && s[i]<='z'){
+                   j= s[i]-'a';// finding write postion  to store frequency of latter
+                  alphabet[j]++;// increase  frequency of latter
+              }
+             i++;
+         }
+        
+        
+      //Cheack
+         i=0,j=0;
+         while(t[i]!='\0'){
+              if(t[i]>='a' && t[i]<='z'){
+                   j= t[i]-'a';
+                   if(alphabet[j]>0){
+                       alphabet[j]--; 
+                   } else{
+                      return false;
+                   }
+              }
+             i++;
+         }
+         return true;
+    }
+};
