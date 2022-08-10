@@ -57,7 +57,7 @@ Node *Swap_node(Node *head, int index1, int index2)
         count++;
     }
 
-    // heandinh speacial case
+    // heanding speacial case
 
     // heading  swep  1  node with other
     if (prev1 != NULL)
@@ -82,6 +82,33 @@ Node *Swap_node(Node *head, int index1, int index2)
     curr2->next = temp1;
     return head;
 }
+
+
+//Swap two alternative Nodes
+ Node* swapPairs(Node* head) {
+          
+          Node *curr= head;
+          Node *prev= NULL;
+          Node *next=NULL;
+        
+        
+        //Swaping of two node
+             int count=0;
+              while(curr!=NULL && count <2){
+                       next= curr->next;
+                       curr->next= prev;
+                       prev= curr;
+                       curr= next;
+                       count++;
+              }
+         //Recursion Call
+         if(next!=NULL){
+              head->next=swapPairs(next);
+         }
+          
+         return prev;
+    }
+    
 int main()
 {
     // code hear
@@ -98,7 +125,9 @@ int main()
     n3->next = n4;
     n4->next = n5;
     n5->next = n6;
-    head = Swap_node(head, 4, 2);
+
+    head = Swap_node(head, 0, 1);
+      
     print(head);
     return 0;
 }

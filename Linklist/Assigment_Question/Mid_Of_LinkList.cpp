@@ -11,21 +11,24 @@ public:
         this->next = NULL;
     }
 };
-Node *middle(Node *head)
-{
-    if (head == NULL || head->next == NULL) //   list is empty or one node in list
+Node *findMiddle(Node *head) {
+      if (head == NULL || head->next == NULL) //   list is empty or one node in list
     {
         return head;
     }
-    Node *fast = head;
-    Node *slow = head;
-
-    while (fast->next != NULL && fast->next->next!= NULL)
-    {
-        slow = slow->next;       // it  will move one step forward
-        fast = fast->next->next; //  it will teo step  forward
-    }
-    return slow;
+     if( head->next->next==NULL){
+          return  head->next;
+     }
+      Node *slow=head;
+     Node *fast= head->next;
+      while(fast!= NULL){
+           fast= fast->next;
+           if(fast!=NULL){
+                fast= fast->next;
+           }
+           slow= slow->next;
+      }
+     return  slow;
 }
 int main()
 {
@@ -43,7 +46,7 @@ int main()
    /// n3->next = n4;
   //  n4->next = n5;
   //  n5->next = n6;
-    Node *mid = middle(head);
+    Node *mid = findMiddle(head);
     cout << mid->data << endl;
 
     return 0;
