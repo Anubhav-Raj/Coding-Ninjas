@@ -8,7 +8,7 @@ using namespace std;
     int  cnt=1;
      for( int i=0;i<root->children.size();i++){
          int sm =nodeCount(root->children[i]);
-          cout<<sm;
+          //cout<<sm;
           cnt=cnt+sm;
      }
    return cnt;

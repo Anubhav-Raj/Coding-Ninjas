@@ -8,7 +8,7 @@ void treePrintLevelWise(TreeClass<int> *root)
     mainQueue.push(root);
 
     queue<TreeClass<int> *> childQueue;
-    int count = 0;
+ 
     while (mainQueue.size() > 0)
     {
         TreeClass<int> *node = mainQueue.front();
@@ -18,13 +18,13 @@ void treePrintLevelWise(TreeClass<int> *root)
         for (int i = 0; i < node->children.size(); i++)
         {
             childQueue.push(node->children[i]);
-            count++;
+           
         }
         if (mainQueue.size() == 0)
         {
             mainQueue = childQueue;
             childQueue = queue<TreeClass<int> *>();
-            ;
+            
             cout << endl;
         }
     }
