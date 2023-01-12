@@ -13,6 +13,7 @@ public:
 };
 
  Node *Delete( Node *head, int index){
+    
       if(head==NULL){
          return head;
       }

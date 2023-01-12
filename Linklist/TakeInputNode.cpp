@@ -71,7 +71,7 @@ Node *takeInput_Batter()
         if (head == NULL)
         {
             head = newNode;
-             tail=newNode;// 9431234229
+             tail=newNode;
         }
         else
         {
