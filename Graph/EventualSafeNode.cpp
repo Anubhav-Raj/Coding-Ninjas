@@ -9,6 +9,9 @@ You have to return an array containing all the safe nodes of the graph. The answ
 
 
 //Approch 1 using DFS
+#include <bits/stdc++.h>
+using namespace std;
+
 class Solution {
   public:
 bool DFS(int sv, vector<int> adj[], vector<int> &pathVisited,vector<int>&visited,vector<int> &cheak){
@@ -98,5 +101,6 @@ class Solution {
             }
              sort(ans.begin(),ans.end());
              return ans;
-          
     }
+          
+};
