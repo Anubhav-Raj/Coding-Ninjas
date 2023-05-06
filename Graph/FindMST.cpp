@@ -119,6 +119,7 @@ public:
 
     int KruskalsAlgo(int V, vector<vector<int>> adj[])
     {
+        // Time complexity
 
         vector<pair<int, pair<int, int>>> edges;
         for (int i = 0; i < V; i++)
